@@ -7,7 +7,7 @@
 <title>Thank you – Pricing Science</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <!-- X conversion tracking base code -->
 <script>
 !function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
@@ -35,19 +35,19 @@ twq('config','qmxf6');
 <style>
 :root{
   /* Layout: one centered confirmation card; the download button is the only job. */
-  --ink:#0E1A2B; --paper:#F7F8FA; --card:#FFFFFF; --rule:#D9DEE7; --muted:#5A6577; --accent:#2448E8;
-  --display:"DM Serif Display", Georgia, serif; --body:"IBM Plex Sans", -apple-system, "Segoe UI", sans-serif; --mono:"IBM Plex Mono", ui-monospace, monospace;
+  --ink:#111418; --paper:#fbfbf6; --card:#FFFFFF; --rule:#d9dbd3; --muted:#5b6170; --accent:#042d62; --amber:#ffbd59;
+  --display:"Manrope", "Helvetica Neue", Arial, sans-serif; --body:"DM Sans", -apple-system, "Segoe UI", sans-serif; --mono:"Manrope", sans-serif;
   color-scheme: light;
 }
 *{box-sizing:border-box}
 html,body{margin:0}
 body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:18px;line-height:1.6;padding:56px 20px}
-.card{max-width:620px;margin:0 auto;background:var(--card);border:1px solid var(--rule);border-radius:8px;padding:40px;display:flex;flex-direction:column;gap:20px}
-.eyebrow{font-family:var(--mono);font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
-h1{font-family:var(--display);font-weight:400;font-size:clamp(34px,5vw,48px);line-height:1.1;margin:0;text-wrap:balance}
+.card{max-width:620px;margin:0 auto;background:var(--card);border:1px solid var(--ink);box-shadow:10px 10px 0 var(--amber);padding:40px;display:flex;flex-direction:column;gap:20px}
+.eyebrow{font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
+h1{font-family:var(--display);font-weight:300;letter-spacing:-.045em;font-size:clamp(34px,5vw,48px);line-height:1.1;margin:0;text-wrap:balance}
 p{margin:0}
 .muted{color:var(--muted);font-size:16px}
-.btn{display:inline-block;align-self:flex-start;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;font-size:19px;padding:16px 28px;border-radius:6px}
+.btn{display:inline-block;align-self:flex-start;background:var(--amber);color:var(--accent);text-decoration:none;font-family:var(--display);font-weight:600;font-size:18px;padding:16px 28px}
 .btn:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
 ol{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px;font-size:16px}
 hr{border:0;border-top:1px solid var(--rule);margin:4px 0}
@@ -56,6 +56,7 @@ a{color:var(--accent)}
 </head>
 <body>
   <main class="card">
+    <img src="/cover-sm.jpg" width="120" alt="" style="width:120px;border:1px solid var(--rule)">
     <p class="eyebrow">Order confirmed</p>
     <h1>Thank you. Your copy of Pricing Science is ready.</h1>
     <a class="btn" href="https://drive.google.com/file/d/1v4j7Gs0_uqpDz7-F3mVZX3iy1QaN62MS/view">Download the PDF</a>
