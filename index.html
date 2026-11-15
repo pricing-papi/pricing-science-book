@@ -162,6 +162,9 @@ footer .runner{border-bottom:0;border-top:1px solid var(--rule)}
   .sticky .btn{padding:12px 18px;font-size:16px}
   body{padding-bottom:72px}
 }
+.about{display:grid;grid-template-columns:220px 1fr;gap:40px;align-items:start;max-width:920px}
+.headshot{width:220px;border:1px solid var(--ink);box-shadow:8px 8px 0 var(--amber);background:var(--white)}
+@media (max-width:880px){.about{grid-template-columns:1fr;gap:24px}.headshot{width:160px}}
 @media (prefers-reduced-motion:reduce){.btn{transition:none}}
 </style>
 </head>
@@ -290,11 +293,14 @@ footer .runner{border-bottom:0;border-top:1px solid var(--rule)}
 
 <section style="padding-top:0">
   <div class="wrap">
-    <div class="col stack">
+    <div class="about">
+      <img class="headshot" src="/tom.jpg" width="480" height="480" alt="Tom Selameab, CPP" loading="lazy">
+      <div class="stack">
       <p class="label">About the author</p>
       <h2>Tom Selameab, CPP</h2>
-      <p>Tom is a Certified Pricing Professional with 15+ years in pricing. He was Head of Pricing at Carta and Director of Pricing at Sprout Social, built pricing teams from scratch at several high-growth software companies, and founded a price optimization software company. He now runs <a href="https://curlysconsulting.com">Curly's Consulting</a>, a pricing advisory practice that helps companies grow revenue through better pricing.</p>
+      <p>Tom is a Certified Pricing Professional with 15+ years in pricing. He was Head of Pricing at Carta and Director of Pricing at Sprout Social, built pricing teams from scratch at several high-growth software companies, and founded a price optimization software company. He now runs <a href="https://curlysconsulting.com">Curly's Consulting</a>. Curly's helps high-growth companies answer consequential questions about pricing, packaging and monetization.</p>
       <p>The six principles come from more than fifty pricing projects across agriculture, retail, fintech, hospitality and B2B software.</p>
+    </div>
     </div>
   </div>
 </section>
