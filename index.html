@@ -2,6 +2,10 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11472649315"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','AW-11472649315');</script>
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Pricing Science by Tom Selameab, CPP</title>
 <meta name="description" content="Six principles for better monetization decisions, from 15+ years and 50+ pricing projects at Carta, Sprout Social and more.">
@@ -185,7 +189,7 @@ footer .runner{border-bottom:0;border-top:1px solid var(--rule)}
           <a class="btn" href="https://buy.stripe.com/9B6aEYaQI3TLex81YfaIM0S">Get the book for $19 <span class="arrow" aria-hidden="true">↗</span></a>
           <span class="price"><s>$45</s> <b>$19</b> launch week</span>
         </div>
-        <p class="fine">Secure checkout by Stripe. Card, Apple Pay or Google Pay.</p>
+        <p class="fine"><b>Money-back guarantee:</b> not useful? Reply to your receipt within 30 days for a full refund.<br>Secure checkout by Stripe. Card, Apple Pay or Google Pay.</p>
       </div>
       <img class="cover" src="/cover.jpg" width="935" height="1210" alt="Pricing Science book cover: six principles for better monetization decisions, by Tom Selameab, CPP">
     </div>
@@ -313,6 +317,7 @@ footer .runner{border-bottom:0;border-top:1px solid var(--rule)}
         <div><dt>What do I get?</dt><dd>An 83-page PDF of Pricing Science, readable on any phone, tablet or computer.</dd></div>
         <div><dt>How do I get it?</dt><dd>Right after checkout you go straight to the download page. The link is also in your emailed receipt.</dd></div>
         <div><dt>Why is it $19?</dt><dd>That's the launch-week price. It goes to $45 after Saturday, November 21 (Pacific time).</dd></div>
+        <div><dt>What if it's not useful to me?</dt><dd>Reply to your receipt email within 30 days and I'll refund you in full. No questions asked.</dd></div>
         <div><dt>Is this about B2B or consumer pricing?</dt><dd>Both. Most examples come from B2B software, with lessons from retail and commodities.</dd></div>
       </dl>
     </div>
@@ -329,6 +334,7 @@ footer .runner{border-bottom:0;border-top:1px solid var(--rule)}
           <a class="btn" href="https://buy.stripe.com/9B6aEYaQI3TLex81YfaIM0S">Get Pricing Science for $19 <span class="arrow" aria-hidden="true">↗</span></a>
           <span class="price"><s>$45</s> <b>$19</b> until Nov 21</span>
         </div>
+        <p class="fine">Not useful? Reply to your receipt within 30 days for a full refund.</p>
       </div>
       <img src="/cover-sm.jpg" width="467" height="605" alt="" loading="lazy">
     </div>
@@ -364,6 +370,7 @@ footer .runner{border-bottom:0;border-top:1px solid var(--rule)}
     var parts=[q.get('utm_source'), q.get('utm_content') || q.get('ref')].filter(Boolean);
     if (parts.length) { src=parts.join('_'); try{sessionStorage.setItem('ps_src',src);}catch(e){} }
     else { try{src=sessionStorage.getItem('ps_src')||'';}catch(e){} }
+    if (!src && (q.get('gclid') || q.get('gbraid') || q.get('wbraid'))) src='google';
     if (!src && document.referrer) { try{ src='ref_'+new URL(document.referrer).hostname; }catch(e){} }
     if (!src) src='direct';
     src=src.replace(/[^A-Za-z0-9_-]/g,'-').slice(0,190);

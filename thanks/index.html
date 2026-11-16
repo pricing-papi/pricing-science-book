@@ -8,6 +8,18 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11472649315"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','AW-11472649315');</script>
+<script>
+  // Google Ads: count the purchase once per Stripe checkout session.
+  (function(){
+    var sid = new URLSearchParams(location.search).get('session_id');
+    if (!sid) return;
+    try { if (localStorage.getItem('ps_gads_' + sid)) return; localStorage.setItem('ps_gads_' + sid, '1'); } catch (e) {}
+    gtag('event', 'conversion', { send_to: 'AW-11472649315/Rsn4CKzFvbkdEOP4yt4q', value: 19.0, currency: 'USD', transaction_id: sid });
+  })();
+</script>
 <!-- X conversion tracking base code -->
 <script>
 !function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
